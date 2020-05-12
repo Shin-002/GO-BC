@@ -29,6 +29,10 @@ func (b *Block) Print() {
 	fmt.Printf("transactions   %d\n", b.transactions)
 }
 
+func (b *Block) Hash() [32]byte {
+
+}
+
 type Blockchain struct {
 	transactionPool []string
 	chain           []*Block
